@@ -1,10 +1,12 @@
 :root {
-    --header: #F55A5A
+    --header: #F55A5A;
+    --font-small: 10.24px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,3 +32,69 @@ body {
     width: 24px;
     height: 24px;
 }
+
+.cards {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    border-bottom: 1px solid #F5F5F5;
+    padding: 18px 0;
+}
+
+.card:last-child { border-bottom: none; }
+
+.card-image {
+    margin-right: 20px;
+    width: 125px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.location {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 4px;
+    font-size: var(--font-small);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.pin-icon {
+    margin-right: 4px;
+}
+
+.mapsUrl a, 
+.mapsUrl a:visited, 
+.mapsUrl a:hover,
+.mapsUrl a:active {
+    font-size: var(--font-small);
+    color: #918E9B;
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.start-end-date {
+    font-size: var(--font-small);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: var(--font-small);
+    font-weight: 400;
+    line-height: 150%;
+}
+
